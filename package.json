@@ -1,5 +1,6 @@
 {
   "name": "travis-ci-test",
+  "homepage": "https://cthogg.github.io/travis-ci-test-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
