@@ -45,3 +45,22 @@ deploy:
 3. Setup homepage in `package.json` file. 
   `"homepage": "https://GITHUB_USERNAME.github.io/REPO_NAME/",`
 3. When you commit and push you should see a `gh-page` branch. These are the static files which are served to github pages. 
+
+## Adding Eslint and Prettier 
+inspired from 
+`https://www.youtube.com/watch?v=bfyI9yl3qfE`
+ESlint should already be installed in  `,/node_modules`
+1. Check the version `./node_modules/.bin/eslint --version`
+2. Run the init `./node_modules/.bin/eslint --init`
+3. An `.eslintrc.json` file should be created in the project root. 
+4. Install Prettier by `npm i prettier eslint-config-prettier eslint-plugin-prettier -D `
+5. In the `.eslintrc.json` file add 
+
+```json
+{
+    "extends": ["react-app", "plugin:prettier/recommended"]
+}
+```
+6. Run eslint (with prettier by) `./node_modules/.bin/eslint . ` (pay attention to the dot) or `npm run lint` 
+7. Automatic fixing `./node_modules/.bin/eslint --fix . ` or  `npm run lint-fix`
+8. Ignore RegisterServiceWorker by adding an `.eslintignore` file and `/src/registerServiceWorker.js`
