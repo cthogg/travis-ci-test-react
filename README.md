@@ -54,6 +54,7 @@ ESlint should already be installed in  `,/node_modules`
 2. Run the init `./node_modules/.bin/eslint --init`
 3. An `.eslintrc.json` file should be created in the project root. 
 4. Install Prettier by `npm i prettier eslint-config-prettier eslint-plugin-prettier -D `
+(Prettier is recommended by the CRA team https://github.com/facebook/create-react-app/issues/1847 )
 5. In the `.eslintrc.json` file add 
 
 ```json
